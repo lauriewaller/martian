@@ -9,6 +9,6 @@ export default class Mars {
       })
       .catch(function(error) {
         return error;
-      })
+      });
   }
 }
