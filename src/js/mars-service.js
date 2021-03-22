@@ -1,4 +1,5 @@
-export default class MarsService {
+/* eslint-disable */
+export default class MarsImage {
   static getMarsImage() {
     return fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${process.env.API_KEY}`)
       .then(function(response) {
