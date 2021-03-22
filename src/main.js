@@ -6,7 +6,7 @@ import $ from 'jquery';
 
 function getElements(response) {
   if (response.hdurl) {
-    $('.showImage').append(`<img src="${response.hdurl}">`);
+    $('.showImage').html(`<img src="${response.hdurl}">`);
   } else {
     $('.showErrors').text(`There was an error: ${response.message}`);
   }
