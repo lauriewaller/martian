@@ -5,8 +5,8 @@ import './css/styles.css';
 import $ from 'jquery';
 
 function getElements(response) {
-  if (response.hdurl) {
-    $('.showImage').html(`<img src="${response.hdurl}">`);
+  if (response.photos[0].img_src) {
+    $('.showImage').html(`<img src="${response.photos[0].img_src}">`);
   } else {
     $('.showErrors').text(`There was an error: ${response.message}`);
   }
