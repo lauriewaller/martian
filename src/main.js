@@ -1,4 +1,5 @@
-import Mars from './js/service.js';
+import ApodImage from './js/apod-service.js';
+import MarsImage from './js/mars-service.js';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
@@ -14,7 +15,7 @@ function getElements(response) {
 
 $("#mars-button").click(function(event) {
   event.preventDefault();
-  Mars.getImage()
+  ApodImage.getImage()
     .then(function(response) {
       getElements(response);
     });
