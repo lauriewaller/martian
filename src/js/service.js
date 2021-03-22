@@ -1,6 +1,6 @@
 export default class Mars {
   static getImage() {
-    return fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.API_KEY}`)
+    return fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${process.env.API_KEY}`)
       .then(function(response) {
         if (!response.ok) {
           throw Error(response.statusText);
